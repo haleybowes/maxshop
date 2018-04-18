@@ -1,0 +1,7 @@
+// Connecting to scss files - remember that the order matters!
+
+@import "setup";
+@import "typography";
+@import "utils";
+@import "components/header";
+@import "components/footer";
