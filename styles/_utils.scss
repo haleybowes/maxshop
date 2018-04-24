@@ -1,0 +1,17 @@
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+$offwhite: #eeeeee;
+$lightgrey: #aaaaaa;
+$darkgrey: #333333;
+$mustard:#d4bd52;
+$white: #fff;
+$offgrey: #666666;
+$offgrey2: #555555;
+$offgrey3: #888888;
+$offgrey4: #444444;
+
+$footerdarkgrey: #383838;
+$footerlightgrey: #404040;

@@ -5,3 +5,1260 @@
 @import "utils";
 @import "components/header";
 @import "components/footer";
+
+// font styles
+
+.visuallyhidden:not(:focus):not(:active) {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          border: 0;
+          padding: 0;
+          white-space: nowrap;
+          clip-path: inset(100%);
+          clip: rect(0 0 0 0);
+          overflow: hidden;
+    }
+
+img {
+    max-height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1920px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+// reusable classes
+
+.wrapper2 {
+    width: 65%;
+    margin: 0 auto;
+}
+
+
+// summer collection section
+
+.summerCollection {
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    & .lineIcon {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    } 
+    & .summerCollectionText {
+        position: relative;
+        z-index: 2;
+        left: 15%;
+        h2 {
+            color: $darkgrey;
+            @include fontSize(18);
+            font-weight: lighter;
+            margin-bottom: 20%;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                border: 1px solid $darkgrey;
+                width: 45px;
+                top: 35px;
+                left: 0;
+            }
+        }
+        p {
+            color: $lightgrey;
+            @include fontSize(18);
+            font-weight: lighter;
+            
+        }
+        h1 {
+            color: $darkgrey;
+            @include fontSize(60);
+            position: relative;
+            z-index: 3;
+            width: 140%;
+            &:last-of-type {
+                margin-top: -15px;
+            }
+        }   
+    }
+    & .summerCollectionImg {
+        display: relative;
+        width: 63%;
+        display: flex;
+        justify-content: flex-end;
+        & .imgBox {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            & .imgBox1, .imgBox2 {
+                background: $white;
+                width: 40px;
+                height: 40px;
+                display: inline;
+                line-height: 45px;
+                text-align: center;
+                font-size: 15px;
+                padding: 20px 20px 14px 20px;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.5);
+                    color: $lightgrey;
+                }
+            }
+        }
+    }
+
+    & .summerNumber {
+        position: relative;
+        bottom: 70px;
+        h3 {
+            @include fontSize(300);
+            color: rgba(170, 170, 170, 0.219608);
+            
+        }
+        & .summerNumberBtn {
+            position: absolute;
+            left: 0;
+            top: 30%;
+            border-radius: 50px;
+            background:$mustard;
+            padding: 10px 30px;
+            &:hover {
+                color: $mustard;
+                border: 1px solid $mustard;
+                background: rgba(0, 0, 0, 0.479);
+            }
+            a {
+                color: white;
+                @include fontSize(12);
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+// summer collection responsive 
+
+@media (max-width: 1250px) {
+    .summerCollection {
+        & .summerCollectionText {
+            p {
+                color: $darkgrey;
+            }
+
+            & .summerNumber {
+                 h3 {
+                    color: rgba(20, 20, 20, 0.6)
+                    }
+                    & .summerNumberBtn {
+                        line-height: 20px;
+                        }
+
+                }
+
+            }
+        }
+}
+
+
+// lookbook section
+
+.lookbook {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    // position: relative;
+
+    & .lookbook2 {
+        img {
+            outline: 2px solid white;
+            outline-offset: -15px;
+        }
+    }
+
+    & .lookbook1,
+    & .lookbook2,
+    & .lookbook3 {
+        position: relative;
+        // display: flex;
+        // justify-content: space-around;
+        & .lookbookOverlay {
+            position: absolute;
+            bottom: 15%;
+            text-align: left;
+            h2:first-of-type {
+                display: inline;
+                background: white;
+            }
+
+            h2 {
+                background:white;
+                padding: 2px 5px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    img {
+        width: 75%;
+    }
+  
+    & .rotatedText {
+        // color: green;
+        // height: 30px;
+        position: absolute;
+        top: 40%;
+        left: -10px;
+
+        p {
+            color: $darkgrey;
+            transform: rotate(270deg);
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                border: 1px solid $darkgrey;
+                width: 15px;
+                top: 43%;
+                left: -20px;
+
+            }
+        }
+    }
+}
+
+// responsive hero image
+
+@media (min-width:900px) {
+    .markJacobs2 {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .summerCollectionText,
+    .summerCollectionImg {
+        display: none;
+        img {
+            display: none;
+        }
+        }
+
+    .wrapper3 {
+        & .springSummerText {
+            right: -180px;
+        }
+    
+        & .springSummerText2 {
+            left:-140px;
+        }
+    }
+    
+
+    .summerCollection {
+        height: 75vh;
+        background-image: url(../images/main-image-1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        position: relative;
+        & .lineIcon {
+            bottom: 10px;
+        }
+        & .summerCollectionText {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+            left: 5%;
+            width: 100%;
+
+            h2 {
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+            
+            h1 {
+                @include fontSize(36);
+                width: 100%;
+                &:last-of-type {
+                    margin-top: -10px;
+                }
+            }
+        }
+
+    }
+
+    // responsive lookbook 
+    .lookbook {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+
+        & .lookbook1,
+        & .lookbook2,
+        & .lookbook3 {
+            flex-basis: 250px;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            max-width: 350px;
+            left: 2%;
+        }
+
+        & .rotatedText {
+        top: 30%;
+        left: -20px;
+        }
+
+
+
+    }
+   
+    // responsive topProduct section
+    .wrapper2,
+    .topProducts {
+        width: 90%;
+        margin: 0 auto;
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .topProducts {
+        & .topText {
+            display: flex;
+            flex-wrap: wrap;
+        
+        }
+    }
+
+// salvatore lookbook
+    section.salvatoreLookbook {
+        margin: 90px auto;
+    }
+
+// 
+// .salvatoreLookbook {
+//     margin-top: 100px;
+//     display: flex;
+//     flex-direction: row;
+//     text-align: right;
+//     position: relative;
+//     & .salvatoreText {
+//         position: absolute;
+//         right: 85px;
+//         top: 100px;
+//         h2 {
+//             @include fontSize(22);
+//         }
+//         p {
+//         color: $lightgrey;
+//         @include fontSize(12);
+//         margin-top: 10px;
+//         }
+
+//         .btn {
+//             display: inline-block;
+//             border-radius: 50px;
+//             border: 1px solid $mustard;
+//             padding: 10px 30px;
+//             @include fontSize(12);
+//             margin-top: 30px;
+//             color: black;
+
+
+
+// 
+
+    .salvatoreLookbook {
+        height: 70vh;
+        background-image: url(../images/main-image-2.png);
+        background-position: center; 
+        background-size: cover;
+        position: relative;
+        margin-top: 90px;
+        
+        & .markJacobs2 {
+            position: absolute;
+            right: 0;
+            bottom: 30%;
+            p {
+            transform: rotate(90deg);
+            text-transform: uppercase;
+            color: white;
+            font-weight: lighter;
+        }
+        }
+
+        & .salvatoreText {
+            p {
+                &:first-of-type {
+                    color: white;
+                    font-weight: lighter;
+                }
+            }
+  
+            h2 {
+                background:#fff;
+                padding: 1px 5px;
+            }
+            h2:last-of-type {
+            display: inline-block;
+            margin-top: 5px;
+            }
+        
+    }
+
+        & .salvatoreImg {
+            & .scrollArrows {
+                top: 90%;
+                left: 12px;
+            }
+            & .markJacobs {
+                display: none;
+
+            }
+        img {
+            display:none;
+        }
+    }
+    }
+
+    .topProductDiv {
+    margin: 0 auto;
+}
+
+
+
+    
+}
+
+
+@media (max-width: 500px) {
+    .wrapper2 {
+        & .salvatoreLookbook {
+            & .salvatoreText {
+               right: 10%;
+               h2:first-of-type {
+                    display: inline;      
+               } 
+            }
+        }
+
+    }
+
+.bottomFooter {
+    p {
+        margin: 30px auto;
+    }
+
+    ul {
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    
+}
+
+
+}
+
+
+// top productts section
+
+.topProducts {
+    margin-top: 50px;
+    position: relative;
+    p {
+        color: $offgrey3;
+        @include fontSize(14);
+        }
+
+        a {
+            color: $lightgrey;
+            @include fontSize(12);
+            display: inline-block;
+            &:hover {
+                color: $offgrey3;
+            }
+            &:first-of-type {
+                padding-right:10px;
+            }
+            &:nth-of-type(2){
+                padding-left:10px;
+            }
+        }
+    h2 {
+        margin-bottom: 20px;
+    }
+    & .topText {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        & .inlineP {
+            display: inline;
+        }
+
+    }
+    & .topProductImg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        & .topProductDiv {
+            flex-basis: 200px;
+             margin: 10px 5px;
+             flex-grow: 1;
+             max-width: 225px;
+
+            p {
+                @include fontSize(12);
+                margin: 5px 0;
+            }
+            p:first-of-type{
+                color: $offgrey2;
+            }
+            p:last-of-type {
+                color: $lightgrey;
+            }
+            & .topProductPic {
+                position: relative;
+                margin-bottom: 10px;
+            }
+            
+            & .shoppingBag {
+                background: #000;
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                padding: 3px;
+                position: absolute;
+                right: 0;
+                bottom: -2px;
+                &:hover {
+                    background: $mustard;
+                }
+                img {
+                    padding:3px;
+                }
+            }
+            p {
+                margin: 5px 0;
+            }
+            
+            h4 {
+                margin-right: 10px;
+                color: $darkgrey;
+                @include fontSize(14);
+                &:nth-of-type(2) {
+                    color: $lightgrey;
+                    text-decoration: line-through;
+                }
+    
+            }
+
+            
+        }
+
+        div {
+            h4 {
+                display: inline;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+.topProductDiv {
+}
+
+
+.wrapper3 {
+    position: relative;
+    width: 100%;
+}
+
+.springSummerText,
+.springSummerText2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    color: $offwhite;
+    @include fontSize(25);
+    font-weight: lighter;
+    
+}
+
+.springSummerText {
+    right: -140px;
+    transform: rotate(90deg);
+
+}
+
+.springSummerText2 {
+    transform: rotate(90deg);
+    left: -100px;
+
+}
+
+
+
+// salvatore lookbook section
+
+.salvatoreLookbook {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    position: relative;
+    & .salvatoreText {
+        position: absolute;
+        right: 85px;
+        top: 100px;
+        h2 {
+            @include fontSize(20);
+            color: $darkgrey;
+        }
+        p {
+        color: $lightgrey;
+        @include fontSize(12);
+        margin-top: 10px;
+        }
+
+        & .btn {
+            display: inline-block;
+            border-radius: 50px;
+            border: 1px solid $mustard;
+            padding: 10px 30px;
+            @include fontSize(12);
+            margin-top: 30px;
+            color: black;
+            &:hover {
+                color: $mustard;
+                border: 1px solid $mustard;
+                background: rgba(0, 0, 0, 0.479);
+            }
+        }
+
+
+    }
+}
+
+.salvatoreImg {
+    position: relative;
+    & .markJacobs {
+        position: absolute;
+        right: -11%;
+        bottom: 11%;
+        p {
+            transform: rotate(270deg);
+            text-transform: uppercase;
+            $offgrey4: #444444;
+        }
+    }
+    img {
+        max-height: 50vh;
+    }
+}
+
+
+.scrollArrows {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 90px;
+    height: 40px;
+    background: $darkgrey;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    p {
+        display: inline;
+        @include fontSize(25);
+        font-weight: lighter;
+    }
+    a {
+        margin: 5px 10px;
+        color: white;
+        font-weight: lighter;
+        @include fontSize(20);
+        &:hover {
+            color: $mustard;
+        }
+    }
+}
+
+
+.salvatoreBorder {
+    position: absolute;
+    right: 0;
+    top: 105px;
+    img {
+        width: 70%;
+    }
+
+}
+
+
+// our blog section
+
+.headerStyle {
+    color: $darkgrey;
+    @include fontSize(22);
+    margin-top: 90px;
+    margin-bottom: 45px;
+}
+
+.ourBlog {
+    
+    h3, p:first-of-type {
+        @include fontSize(12);
+        color: $lightgrey;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $offgrey;
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        color: $darkgrey;
+        @include fontSize(18);
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    p:last-of-type {
+        line-height: 1.5;
+        @include fontSize(12);
+        font-weight: lighter;
+    }
+    & .blogSection1,
+    & .blogSection2 {
+        display: flex;
+        flex-direction: row;  
+    }
+    & .blogSection1 {
+        & .blogText {
+            width: 30%;
+            margin-left: 5%;
+            margin-top: 65px; 
+            p {
+                position: relative; 
+                z-index: 2; 
+                width: 120%;
+            }
+        }
+    
+        & .blogImg1 {
+            width: 70%;
+            position: relative;
+            z-index: 1;
+            top: 50px; 
+            left: 15px;
+            img {
+                width: 100%;
+            }
+           
+            
+        }
+    }
+    
+    & .blogSection2 {
+        & .blogText2 {
+            width: 30%;
+            margin-right: 5%;
+            text-align: right;
+            margin-top: 50px;
+            p:last-of-type {
+                position: relative; 
+                z-index: 1; 
+                width: 120%;
+                right: 20%;
+            }
+        }
+    
+        & .blogImg2 {
+            width: 70%;
+            z-index: -1;
+            img {
+                width: 100%;
+            }
+            
+        }
+        
+        // & .blogText2 {
+        //     margin-right: 10%;
+        //     text-align: right;
+        //     p {
+        //         position: relative; 
+        //         z-index: 2; 
+        //         width: 110%;
+        //     }
+        // }
+    
+        // & .blogImg2 {
+        //     z-index: 1;
+        //     position: relative;
+        //     width: 80%;
+        //     img {
+        //         width: 100%;
+        //     }
+        // }
+      
+    }
+}
+
+
+
+
+.blogImgScroll {
+    position: relative;
+    .imgBox {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: white;
+        & .imgBox1, 
+        & .imgBox2 {
+            display: inline-block;
+            padding: 20px;
+        }
+        }
+    }
+
+
+// blog section responsive 
+
+@media (max-width: 700px) {
+    .ourBlog {
+        margin: 0 auto;
+        & .blogSection1, & .blogSection2 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        & .blogSection2 {
+            & .blogText2 {
+                width: 100%;
+                margin:0;
+                padding-right: 20px;
+                text-align: right;
+                p:last-of-type {
+                    position: relative; 
+                    z-index: 1; 
+                    width: 100%;
+                    right: 0;
+                }
+            }
+        
+            & .blogImg2 {
+                width: 100%;
+                z-index: 1;
+                order: 2;
+                text-align: center;
+                img {
+                    width: 94%;
+                }
+                
+            }
+        }
+    
+        & .blogSection1 {
+            & .blogText {
+                width: 100%;
+                margin: 0;
+                padding-left: 20px;
+                p {
+                    position: relative; 
+                    z-index: 1; 
+                    width: 100%;
+                }
+            }
+        
+            & .blogImg1 {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                top: 0; 
+                left: 0;
+                img {
+                    width: 100%;
+                }
+               
+                
+            }
+        }
+
+    }
+    
+
+
+
+
+
+
+
+}
+
+
+
+
+
+// @media (max-width: 720px) {
+//     .blogSection1,
+//     .blogSection2 {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column; 
+//     & .blogImg1 {
+//         width: 100%;
+//         img {
+//             right: 0;
+//             width: 100%;
+//         }
+//     } 
+
+
+
+//     & .blogImg2 {
+//         text-align: center;
+//         order: 2;
+//         width: 100%;
+//         img {
+//             max-width: 94%;
+//             margin-top: 50px;
+//             // margin-bottom: 100px;
+  
+//         }
+//     }
+// }
+
+// .ourBlog .blogSection2 {
+//     position: relative;
+//     top: 0;
+// }
+
+//     & .blogText,
+//     & .blogText2 {
+//         margin: 0 auto;
+//         width: 100%;
+//        p:last-of-type {
+//             position: relative;
+//             left: 0;
+//             top: 0;
+//         }
+//     }
+
+//     .blogText {
+//         margin-left: 5%;
+//     }
+
+//     .blogText2 {
+//         margin-right: 5%;
+//         p:last-of-type {
+//             bottom: 0;
+//         }
+//     }
+
+// }
+// }
+
+
+// rethink resign section
+
+.rethinkDesign {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 90px;
+
+    & .designSection1 {
+        background-image: url(../images/footer-1.png);
+        background-size: cover;
+        background-position: center;
+        color: white;
+        a {
+            color: white;
+            border: 1px solid white;
+        }
+    }
+    & .designSection2 {
+        background-image: url(../images/footer-2.png);
+        background-size: cover;
+        background-position: center;
+        a {
+            color: black;
+            border: 1px solid black;
+        }
+    }
+    & .designSection1, 
+    & .designSection2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-grow: 1;
+        align-content: space-around;
+        h1 {
+            margin-bottom: 5px;
+            @include fontSize(20); 
+        }
+        p {
+            @include fontSize(14);
+        }
+        & .designSectionText {
+            margin: 150px auto;
+            }
+        a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 50px;
+            &:hover {
+                color: $mustard;
+                border: 1px solid $mustard;
+                background: rgba(0, 0, 0, 0.479);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// footer styles
+
+.upperFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .tags,
+    & .instagram,
+    & .contact, 
+    & .newsletter {
+        padding:5px;
+        margin: 0 auto;
+        flex-basis: 220px;
+        flex-grow: 1;
+        margin-top: 90px;
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+    }
+    & .tags {
+        ul li{
+            display: inline;
+            button {
+                font-size: 10px;
+            }
+        }
+    }
+
+    & .newsletter {
+        p {
+            margin-bottom: 30px;
+        }
+        form {
+            input:first-of-type {
+                width: 70%;
+                max-width: 180px;
+            }
+        }
+    }
+
+    & .instagram {
+        & .instaImages{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            & .instaImgageDiv {
+                width: calc((100% / 3) - 4px);
+                margin: 2px;
+                img {
+                    max-width: 100%;
+                    display: flex;
+                    flex-grow: 1;
+                }
+                // display: flex;
+                // flex-wrap: wrap;
+            }
+
+        }
+    }
+
+    & .contact {
+        p {
+            margin-bottom: 7px;
+            line-height: 1.3;
+            &:nth-of-type(2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+footer {
+    background: $footerdarkgrey;
+    color: #fff;
+    @include fontSize(12);
+    font-weight: lighter;
+    & .upperFooter {
+        h3 {
+        color: $mustard;
+        font-weight: lighter;
+        }
+        input {
+            border: 1px solid white;
+        }
+        & button, input {
+            background: $footerdarkgrey;
+            padding: 10px;
+            color: #fff;
+            margin-bottom: 5px;
+            border: 1px solid #fff;
+            font-weight: lighter;
+            &:hover {
+                border: 1px solid $mustard;
+                color: $mustard;
+            }
+        }
+    }
+}
+
+.middleFooter {
+    margin-top: 70px;
+    h3 {
+        text-align: center;
+        color: $mustard;
+        font-weight: lighter;
+    }
+    & .midFooter {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    & .socialLinks {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        ul li {
+            display: inline-block;
+            margin-bottom: 15px;
+            a {
+                color: white;
+                padding: 10px 15px;
+                margin-bottom: 50px;
+                margin-right: 10px;
+                margin-left: 10px;
+                &:hover {
+                    border: 1px solid $mustard;
+                    color: $mustard;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// bottom footer 
+.bottomFooterBg {
+    background: $footerlightgrey;
+}
+
+.bottomFooter {
+    
+    & > * {
+        margin: 40px 0;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    ul li {
+        display: inline;
+        padding: 10px;
+        
+        a {
+            color: white;
+            &:hover {
+                color: $mustard;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1300px) {
+    .salvatoreLookbook {
+        & .salvatoreText {
+            h2 {
+                margin-top: 5px;
+                background:#fff;
+                padding: 1px 5px;
+            }
+            h2:last-of-type {
+            display: inline-block;
+            margin-top: 2px;
+            }
+        }
+    }   
+}

@@ -5,9 +5,655 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title></title>
+    <!-- custom styles -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- font awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400" rel="stylesheet">
+
+    <!-- hamburger menu jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <!--NAV OVERLAY-->
+    <script>
+        function openNav() {
+            document.getElementById("hamburgerNav").style.height = "70%";
+        }
+
+        function closeNav() {
+            document.getElementById("hamburgerNav").style.height = "0%";
+        }
+    </script>
 </head>
 <body>
+    <!-- header -->
+    <div class="wrapper1">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.png" alt="maxshop logo">
+            </div>
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- hamburger nav -->
+            <div id="hamburgerNav" class="overlay">
+                <a href="javascript:void(0);" class="closebtn" onClick="closeNav();">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Lookbook</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            
+            <span class="fr nav-button" style="font-size:60px;cursor:pointer;padding-right:20px;" onclick="openNav()">&#9776;</span>
+            <!-- hamburger nav end -->
+            <style>
+            
+            
+            </style>   
+
+            <div class="countryPicker">
+                <ul class="mainCountryPicker">
+                    <li><img src="images/uk-flag.png"></li>
+                    <li>GB</li>
+                    <li><i class="fas fa-caret-down"></i>
+                        <ul class="subCountryPicker">
+                            <li>
+                                <img src="images/usaflag.png">
+                                <p>US</p>
+                            </li>
+                            <li>
+                                <img src="images/franceflag.png" alt="">
+                                <p>FR</p>
+                            </li>
+                            <li>
+                                <img src="images/germanyflag.png" alt="">
+                                <p>DE</p>
+                            </li>
+                            <li>
+                                <img src="images/brazilflag.png" alt="">
+                                <p>BR</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="siteSearch">
+                <ul class="mainSearch">
+                    <li><i class="fas fa-search"></i>
+                        <ul class="subSearch">
+                            <li>
+                                <div class="searchNow">
+                                    <h3>Search now!</h3>
+                                    <form action="">
+                                        <label class="visuallyhidden" for="searchsite">Search site</label>
+                                        <input type="text" id="searchsite" placeholder="Your search here...">
+                                        <label class="visuallyhidden" for="searchsite">Search site</label>
+                                        <input type="submit" id="searchsite" value="Search">
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><i class="far fa-user"></i></li>
+
+        <!-- testing -->
+                    <li>
+                        <img src="images/bag.svg" alt="">
+                        <div class="shoppingMenu">
+                            <div class="bagSection">
+                                <div class="bagCategory">
+                                    <h3>Clothing</h3>
+                                </div>
+                                <ul class="bagList">
+                                    <li>Shirts</li>
+                                    <li>Tops</li>
+                                    <li>Outerwear</li>
+                                    <li>Bottoms</li>
+                                    <li>Denim</li>
+                                    <li>Swim</li>
+                                </ul>
+                            </div>
+                            <div class="bagSection">
+                                <div class="bagCategory">
+                                    <h3>Hand Bag</h3>
+                                </div>
+                                <ul class="bagList">
+                                    <li>Work</li>
+                                    <li>Weekend</li>
+                                    <li>Backpacks</li>
+                                    <li>Wallets</li>
+                                    <li>Work</li>
+                                </ul>
+                            </div>
+                            <div class="bagSection">
+                                <div class="bagCategory">
+                                    <h3>Shoes</h3>
+                                </div>
+                                <ul class="bagList">
+                                    <li>Sneakers</li>
+                                    <li>Casual</li>
+                                    <li>Boots</li>
+                                    <li>Shoe Care/li>
+                                </ul>
+                            </div>
+                            <div class="bagSection">
+                                <div class="bagCategory">
+                                    <h3>Accessories</h3>
+                                </div>
+                                <ul class="bagList">
+                                    <li>Sunglasses</li>
+                                    <li>Watches</li>
+                                    <li>Jewelry</li>
+                                    <li>Hats, Scarves, Gloves</li>
+                                    <li>Ties</li>
+                                    <li>Underwear & Socks</li>
+                                    <li>Grooming Products</li>
+                                    <li>Belts</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </li>
+        <!-- test end -->
+                </ul>
+            </div>
+        </header>
+    </div>
+    <section class="summerCollection">
+        <div class="lineIcon">
+            <img src="images/line-icon.svg" alt="line icon">
+        </div>
+        <div class="summerCollectionText">
+            <h2>26 / 02 / 2016</h2>
+            <p>Bring glamour to your wardrobe</p>
+            <h1>Summer</h1>
+            <h1>Collection 2016 &rdquo;</h1>
+            <div class="summerNumber">
+                <h3>01</h3>
+                <div class="summerNumberBtn">
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="summerCollectionImg">
+            <img src="images/main-image-1.png" alt="rack of white clothing">
+            <div class="imgBox">
+                <div class="imgBox1">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="imgBox2">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="lookbook">
+        <div class="lookbook1">
+            <img src="images/image-1.png" alt="">
+            <div class="rotatedText">
+                <p>Diverse Products</p>
+            </div>
+            <div class="lookbookOverlay">
+                <h2>Fashion</h2>
+                <h2>& Accessories</h2>
+            </div>
+        </div>
+        <div class="lookbook2">
+            <img src="images/image-2.png" alt="">
+            <div class="rotatedText">
+                <p>Diverse Products</p>
+            </div>
+            <div class="lookbookOverlay">
+                <h2>Fashion</h2>
+                <h2>& Accessories</h2>
+            </div>
+        </div>
+        <div class="lookbook3">
+            <img src="images/image-3.png" alt="">
+            <div class="rotatedText">
+                <p>Diverse Products</p>
+            </div>
+            <div class="lookbookOverlay">
+                <h2>Fashion</h2>
+                <h2>& Accessories</h2>
+            </div>
+        </div>
+    </section>
+
+    <!------------------ top products section ---------------->
+<div class="wrapper3">
+    <div class="springSummerText">
+        <h1>Spring/Summer</h1>
+    </div>
+    <div class="wrapper2">
+        <section class="topProducts">
+            <h2 class="headerStyle">Top Products</h2>
+            <div class="topText">
+                <p>Come and check out our new spring summer collection 2016</p>
+                <div>
+                    <a href="#">Prev</a>
+                    <p class="inlineP">/</p>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+            <div class="topProductImg">
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/top-product-1.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Lipsey Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h4>$ 120.00</h4>
+                    <h4>$ 150.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/top-product-2.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Lipsey Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h4>$ 120.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/top-product-3.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Lipsey Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h4>$ 120.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/top-product-4.jpg" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Lipsey Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h4>$ 120.00</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="wrapper2">
+    <section class="salvatoreLookbook">
+        <div class="markJacobs2">
+            <p>By Mark Jacobs</p>
+        </div>
+        <div class="salvatoreImg">
+            <div class="salvatoreBorder">
+                <img src="images/border.svg" alt="">
+            </div>
+            <img src="images/main-image-2.png" alt="">
+            <div class="markJacobs">
+                <p>By Mark Jacobs</p>
+            </div>
+            <div class="scrollArrows">
+                <a href="#"><i class="fas fa-angle-left"></i></a>
+                <p>|</p>
+                <a href="#"><i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="salvatoreText">
+            <h2>Salvatore Ferragamo Lookbook</h2>
+            <h2>Spring/Summer 2016</h2>
+            <p>18 June 2016 / Salvatore Campaign</p>
+            <a href="#" class="btn">Get the look</a>
+        </div>
+    </section>
+</div>
+
+<div class="wrapper3">
+    <div class="springSummerText2">
+        <h1>Summer Sale</h1>
+    </div>
+    <div class="wrapper2">
+        <section class="topProducts">
+            <h2 class="headerStyle">Onsale Products</h2>
+            <div class="topText">
+                <p>Come and check out our new spring summer collection 2016</p>
+                <div>
+                    <a href="#">Prev</a>
+                    <p class="inlineP">/</p>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+            <div class="topProductImg">
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/onsale-products-1.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Lipsey Crochet Applique Wrap</p>
+                    <p>Blouse</p>
+                    <h4>$ 120.00</h4>
+                    <h4>$ 150.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/onsale-products-2.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Sweatshirt in Grey Marl</p>
+                    <p>Blouse</p>
+                    <h4>$ 88.00</h4>
+                    <h4>$ 120.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/onsale-products-3.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>Oysho Crop & Vest Set</p>
+                    <p>Dress</p>
+                    <h4>$ 112.00</h4>
+                    <h4>$ 140.00</h4>
+                </div>
+                <div class="topProductDiv">
+                    <div class="topProductPic">
+                        <img class="shoppingTest" src="images/onsale-products-4.png" alt="">
+                        <div class="shoppingBag">
+                            <img src="images/shopping-bag.png" alt="shopping bag icon">
+                        </div>
+                    </div>
+                    <p>55DSL Lightning Bolt Sweatshirt</p>
+                    <p>Sweatshirts</p>
+                    <h4>$ 80.00</h4>
+                    <h4>$ 100.00</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="wrapper2">
+    <h2 class="headerStyle">Our Blog</h2>
+    <section class="ourBlog">
+        <div class="blogSection1">
+            <div class="blogText">
+                <h3>Lookbook</h3>
+                <h2>Exerpt: A Sense of Belonging</h2>
+                <p>4 October 2016/368 Comments</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim odit corrupti incidunt tempora error asperiores similique.</p>
+            </div>
+            <div class="blogImg1">
+                <img src="images/blog-1.png" alt="">
+            </div>
+        </div>
+        <div class="blogSection2">
+            <div class="blogImg2">
+                <div class="blogImgScroll">
+                    <img src="images/blog-2.png" alt="">
+                    <div class="imgBox">
+                        <div class="imgBox1">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="imgBox2">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blogText2">
+                <h3>Lookbook</h3>
+                <h2>Chester & Peck 2016</h2>
+                <p>4 October 2016/368 Comments</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim odit corrupti incidunt tempora error asperiores similique.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="rethinkDesign">
+    <div class="designSection1">
+        <div class="designSectionText">
+            <h1>Rething Your Design</h1>
+            <p>Minimal and Modern Look</p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+    </div>
+    <div class="designSection2">
+        <div class="designSectionText">
+            <h1>We are a Fasion Shop</h1>
+            <p>Revolutionary Concepts</p>
+            <a href="#" class="btn">Discover More</a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="upperFooter wrapper2">
+            <div class="contact">
+                <h3 class="footerHeaderText">contact</h3>
+                <p>621 Bingamon Branch Road Warwick</p>
+                <p>NY 10990</p>
+                <p>Phone: 845-988-7165</p>
+                <p>Fax: 814-468-0188</p>
+                <p>Email: Support@max-shop.com</p>
+            </div>
+            <div class="tags">
+                <h3 class="footerHeaderText">Tags</h3>
+                <ul>
+                    <li>
+                        <button>creative</button>
+                    </li>
+                    <li>
+                        <button>blog</button>
+                    </li>
+                    <li>
+                        <button>maxshopthemes</button>
+                    </li>
+                    <li>
+                        <button>themeforest</button>
+                    </li>
+                    <li>
+                        <button>logo</button>
+                    </li>
+                    <li>
+                        <button>template</button>
+                    </li>
+                    <li>
+                        <button>psd</button>
+                    </li>
+                    <li>
+                        <button>wordpress</button>
+                    </li>
+                </ul>
     
+            </div>
+            <div class="instagram">
+                <h3 class="footerHeaderText">Instagram</h3>
+                <div class="instaImages">
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-1.png" alt="">
+                    </div>
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-2.png" alt="">
+                    </div>
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-3.png" alt="">
+                    </div>
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-4.png" alt="">
+                    </div>
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-5.png" alt="">
+                    </div>
+                    <div class="instaImgageDiv">
+                        <img src="images/insta-6.png" alt="">
+                    </div>
+                    <!-- <img src="images/insta-2.png" alt="">
+                    <img src="images/insta-3.png" alt="">
+                    <img src="images/insta-4.png" alt="">
+                    <img src="images/insta-5.png" alt="">
+                    <img src="images/insta-6.png" alt=""> -->
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3 class="footerHeaderText">Newsletter</h3>
+                <p>Signup for our Newsletter & Events</p>
+                <form>
+                    <label class="visuallyhidden" for="youremail">Enter your email to sign up</label>
+                    <input type="email" id="youremail" placeholder="Email address">
+                    <label class="visuallyhidden" for="signup">Submit your email for sign up</label>
+                    <input type="submit" id="signup" value="Signup">
+                </form>
+            </div>
+        </div>
+    <section class="middleFooter">
+        <h3>FOLLOW US ON</h3>
+        <div class="midFooter">
+            <div class="socialLinks">
+                <ul>
+                    <li>
+                        <a href="#">Behance</a>
+                    </li>
+                    <li>
+                        <a href="#">Dribble</a>
+                    </li>
+                    <li>
+                        <a href="#">Themeforest</a>
+                    </li>
+                    <li>
+                        <a href="#">Pinterest</a>
+                    </li>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+    </section>    
+</div>
+
+<div class="bottomFooterBg">
+    <div class="wrapper2">
+        <section class="bottomFooter">
+            <p>&copy; Maxshop 2016. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Term of Use</a></li> |
+                <li><a href="#">Privacy policy</a></li> |
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+<!-- <div class="shoppingMenu">
+   <div class="bagSection">
+      <div class="bagCategory">
+          <h3>Clothing</h3>
+      </div>
+      <ul class="bagList">
+        <li>Shirts</li>
+        <li>Tops</li>
+        <li>Outerwear</li>
+        <li>Bottoms</li>
+        <li>Denim</li>
+        <li>Swim</li>
+      </ul>
+   </div>
+    <div class="bagSection">
+        <div class="bagCategory">
+            <h3>Hand Bag</h3>
+        </div>
+        <ul class="bagList">
+            <li>Work</li>
+            <li>Weekend</li>
+            <li>Backpacks</li>
+            <li>Wallets</li>
+            <li>Work</li>
+        </ul>
+    </div>
+    <div class="bagSection">
+        <div class="bagCategory">
+            <h3>Shoes</h3>
+        </div>
+        <ul class="bagList">
+            <li>Sneakers</li>
+            <li>Casual</li>
+            <li>Boots</li>
+            <li>Shoe Care/li>
+        </ul>
+    </div>
+    <div class="bagSection">
+        <div class="bagCategory">
+            <h3>Accessories</h3>
+        </div>
+        <ul class="bagList">
+            <li>Sunglasses</li>
+            <li>Watches</li>
+            <li>Jewelry</li>
+            <li>Hats, Scarves, Gloves</li>
+            <li>Ties</li>
+            <li>Underwear & Socks</li>
+            <li>Grooming Products</li>
+            <li>Belts</li>
+        </ul>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
