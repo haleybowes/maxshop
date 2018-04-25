@@ -36,26 +36,24 @@
             <nav class="mainNav">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Lookbook</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#lookbook">Lookbook</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
             <!-- hamburger nav -->
             <div id="hamburgerNav" class="overlay">
                 <a href="javascript:void(0);" class="closebtn" onClick="closeNav();">&times;</a>
                 <div class="overlay-content">
-                    <a href="#">Home</a>
+                    <a href="#shop">Home</a>
                     <a href="#">Shop</a>
-                    <a href="#">Lookbook</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Blog</a>
+                    <a href="#lookbook">Lookbook</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#blog">Blog</a>
                 </div>
             </div>
-            
             <span class="fr nav-button" style="font-size:60px;cursor:pointer;padding-right:20px;" onclick="openNav()">&#9776;</span>
-            <!-- hamburger nav end -->
             <style>
             
             
@@ -72,15 +70,15 @@
                                 <p>US</p>
                             </li>
                             <li>
-                                <img src="images/franceflag.png" alt="">
+                                <img src="images/franceflag.png" alt="france flag">
                                 <p>FR</p>
                             </li>
                             <li>
-                                <img src="images/germanyflag.png" alt="">
+                                <img src="images/germanyflag.png" alt="germany flag">
                                 <p>DE</p>
                             </li>
                             <li>
-                                <img src="images/brazilflag.png" alt="">
+                                <img src="images/brazilflag.png" alt="brazil flag">
                                 <p>BR</p>
                             </li>
                         </ul>
@@ -104,67 +102,59 @@
                             </li>
                         </ul>
                     </li>
-                    <li><i class="far fa-user"></i></li>
-
-        <!-- testing -->
                     <li>
-                        <img src="images/bag.svg" alt="">
-                        <div class="shoppingMenu">
-                            <div class="bagSection">
-                                <div class="bagCategory">
-                                    <h3>Clothing</h3>
-                                </div>
-                                <ul class="bagList">
-                                    <li>Shirts</li>
-                                    <li>Tops</li>
-                                    <li>Outerwear</li>
-                                    <li>Bottoms</li>
-                                    <li>Denim</li>
-                                    <li>Swim</li>
-                                </ul>
-                            </div>
-                            <div class="bagSection">
-                                <div class="bagCategory">
-                                    <h3>Hand Bag</h3>
-                                </div>
-                                <ul class="bagList">
-                                    <li>Work</li>
-                                    <li>Weekend</li>
-                                    <li>Backpacks</li>
-                                    <li>Wallets</li>
-                                    <li>Work</li>
-                                </ul>
-                            </div>
-                            <div class="bagSection">
-                                <div class="bagCategory">
-                                    <h3>Shoes</h3>
-                                </div>
-                                <ul class="bagList">
-                                    <li>Sneakers</li>
-                                    <li>Casual</li>
-                                    <li>Boots</li>
-                                    <li>Shoe Care/li>
-                                </ul>
-                            </div>
-                            <div class="bagSection">
-                                <div class="bagCategory">
-                                    <h3>Accessories</h3>
-                                </div>
-                                <ul class="bagList">
-                                    <li>Sunglasses</li>
-                                    <li>Watches</li>
-                                    <li>Jewelry</li>
-                                    <li>Hats, Scarves, Gloves</li>
-                                    <li>Ties</li>
-                                    <li>Underwear & Socks</li>
-                                    <li>Grooming Products</li>
-                                    <li>Belts</li>
-                                </ul>
-                            </div>
-                        </div>                        
+                        <i class="far fa-user"></i>
+                            <ul class="userInfo">
+                                <li>
+                                    <h2>My Account</h2>
+                                </li>
+                                <li>Login/Register</li>
+                                <li>Wishlist <p>(3)</p></li>
+                                <li>Compare Items <p>(6)</p></li>
+                                <li>Checkout</li>
+                                <li>Currency:</li>    
+                                <li>England <p>(GBP)</p></li>
+                                <li>United States <p>(USD)</p></li>
+                                <li>France <p>(EUR)</p></li>
+                            </ul> 
                     </li>
-        <!-- test end -->
-                </ul>
+                    <li>
+                        <img src="images/bag.svg" alt="shopping bag icon">
+                        <ul class="shopBag">
+                            <li>
+                                <h3>Shopping Bag</h3>
+                                <p>you have 3 item(s) in your bag</p>
+                                    <div class="clothingItem">
+                                        <img src="https://picsum.photos/75/100" alt="placeholder clothing image">
+                                        <div class="clothingDescription">
+                                            <p>Lipsy Crochet Applique Wrap</p>
+                                            <p>Blouse</p>
+                                            <h4>$ 120.00</h4>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="clothingItem">
+                                        <img src="https://picsum.photos/75/100" alt="placeholder clothing image">
+                                        <div class="clothingDescription">
+                                            <p>Lipsy Crochet Applique Wrap</p>
+                                            <p>Blouse</p>
+                                            <h4>$ 120.00</h4>
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="subtotal">
+                                        <h4>Subtotal</h4>
+                                        <h4>$320.00</h4>
+                                    </div>
+                                    <div class="subtotalButtons">
+                                        <button>View Bag</button>
+                                        <button>Checkout</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul> 
+                </li>
+                
             </div>
         </header>
     </div>
@@ -197,9 +187,9 @@
             </div>
         </div>
     </section>
-    <section class="lookbook">
+    <section id="lookbook" class="lookbook">
         <div class="lookbook1">
-            <img src="images/image-1.png" alt="">
+            <img src="images/image-1.png" alt="first look in lookbook section">
             <div class="rotatedText">
                 <p>Diverse Products</p>
             </div>
@@ -209,23 +199,23 @@
             </div>
         </div>
         <div class="lookbook2">
-            <img src="images/image-2.png" alt="">
+            <img src="images/image-2.png" alt="second look in lookbook section">
             <div class="rotatedText">
-                <p>Diverse Products</p>
+                <p>Unique Novelties</p>
             </div>
             <div class="lookbookOverlay">
-                <h2>Fashion</h2>
-                <h2>& Accessories</h2>
+                <h2>New</h2>
+                <h2>Collections</h2>
             </div>
         </div>
         <div class="lookbook3">
-            <img src="images/image-3.png" alt="">
+            <img src="images/image-3.png" alt="third look in lookbook section">
             <div class="rotatedText">
-                <p>Diverse Products</p>
+                <p>Unique Novelties</p>
             </div>
             <div class="lookbookOverlay">
-                <h2>Fashion</h2>
-                <h2>& Accessories</h2>
+                <h2>Spring/Summer</h2>
+                <h2>Lookbook</h2>
             </div>
         </div>
     </section>
@@ -233,10 +223,10 @@
     <!------------------ top products section ---------------->
 <div class="wrapper3">
     <div class="springSummerText">
-        <h1>Spring/Summer</h1>
+        <h1>Spring / Summer</h1>
     </div>
     <div class="wrapper2">
-        <section class="topProducts">
+        <section id="shop" class="topProducts">
             <h2 class="headerStyle">Top Products</h2>
             <div class="topText">
                 <p>Come and check out our new spring summer collection 2016</p>
@@ -249,7 +239,7 @@
             <div class="topProductImg">
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/top-product-1.png" alt="">
+                        <img class="shoppingTest" src="images/top-product-1.png" alt="top product picture">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -261,29 +251,29 @@
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/top-product-2.png" alt="">
+                        <img class="shoppingTest" src="images/top-product-2.png" alt="top product picture 2">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
                     </div>
                     <p>Lipsey Crochet Applique Wrap</p>
                     <p>Blouse</p>
-                    <h4>$ 120.00</h4>
+                    <h4>$ 110.00</h4>
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/top-product-3.png" alt="">
+                        <img class="shoppingTest" src="images/top-product-3.png" alt="top product picture 3">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
                     </div>
                     <p>Lipsey Crochet Applique Wrap</p>
                     <p>Blouse</p>
-                    <h4>$ 120.00</h4>
+                    <h4>$ 143.00</h4>
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/top-product-4.jpg" alt="">
+                        <img class="shoppingTest" src="images/top-product-4.jpg" alt="top product picture 4">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -305,9 +295,9 @@
         </div>
         <div class="salvatoreImg">
             <div class="salvatoreBorder">
-                <img src="images/border.svg" alt="">
+                <img src="images/border.svg" alt="salvatore section border">
             </div>
-            <img src="images/main-image-2.png" alt="">
+            <img src="images/main-image-2.png" alt="main image for salvatore section">
             <div class="markJacobs">
                 <p>By Mark Jacobs</p>
             </div>
@@ -344,7 +334,7 @@
             <div class="topProductImg">
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/onsale-products-1.png" alt="">
+                        <img class="shoppingTest" src="images/onsale-products-1.png" alt="onsale product picture 1">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -356,7 +346,7 @@
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/onsale-products-2.png" alt="">
+                        <img class="shoppingTest" src="images/onsale-products-2.png" alt="onsale product picture 2">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -368,7 +358,7 @@
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/onsale-products-3.png" alt="">
+                        <img class="shoppingTest" src="images/onsale-products-3.png" alt="onsale product picture 3">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -380,7 +370,7 @@
                 </div>
                 <div class="topProductDiv">
                     <div class="topProductPic">
-                        <img class="shoppingTest" src="images/onsale-products-4.png" alt="">
+                        <img class="shoppingTest" src="images/onsale-products-4.png" alt="onsale product picture 4">
                         <div class="shoppingBag">
                             <img src="images/shopping-bag.png" alt="shopping bag icon">
                         </div>
@@ -397,8 +387,8 @@
 
 
 <div class="wrapper2">
-    <h2 class="headerStyle">Our Blog</h2>
-    <section class="ourBlog">
+    <h2 class="headerStyle ourBlogHeader">Our Blog</h2>
+    <section id="blog" class="ourBlog">
         <div class="blogSection1">
             <div class="blogText">
                 <h3>Lookbook</h3>
@@ -407,13 +397,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam enim odit corrupti incidunt tempora error asperiores similique.</p>
             </div>
             <div class="blogImg1">
-                <img src="images/blog-1.png" alt="">
+                <img src="images/blog-1.png" alt="first blog image">
             </div>
         </div>
         <div class="blogSection2">
             <div class="blogImg2">
                 <div class="blogImgScroll">
-                    <img src="images/blog-2.png" alt="">
+                    <img src="images/blog-2.png" alt="second blog image">
                     <div class="imgBox">
                         <div class="imgBox1">
                             <i class="fas fa-chevron-left"></i>
@@ -453,7 +443,7 @@
 
     <footer>
         <div class="upperFooter wrapper2">
-            <div class="contact">
+            <div id="contact" class="contact">
                 <h3 class="footerHeaderText">contact</h3>
                 <p>621 Bingamon Branch Road Warwick</p>
                 <p>NY 10990</p>
@@ -495,28 +485,23 @@
                 <h3 class="footerHeaderText">Instagram</h3>
                 <div class="instaImages">
                     <div class="instaImgageDiv">
-                        <img src="images/insta-1.png" alt="">
+                        <img src="images/insta-1.png" alt="instagram picture">
                     </div>
                     <div class="instaImgageDiv">
-                        <img src="images/insta-2.png" alt="">
+                        <img src="images/insta-2.png" alt="instagram picture">
                     </div>
                     <div class="instaImgageDiv">
-                        <img src="images/insta-3.png" alt="">
+                        <img src="images/insta-3.png" alt="instagram picture">
                     </div>
                     <div class="instaImgageDiv">
-                        <img src="images/insta-4.png" alt="">
+                        <img src="images/insta-4.png" alt="instagram picture">
                     </div>
                     <div class="instaImgageDiv">
-                        <img src="images/insta-5.png" alt="">
+                        <img src="images/insta-5.png" alt="instagram picture">
                     </div>
                     <div class="instaImgageDiv">
-                        <img src="images/insta-6.png" alt="">
+                        <img src="images/insta-6.png" alt="instagram picture">
                     </div>
-                    <!-- <img src="images/insta-2.png" alt="">
-                    <img src="images/insta-3.png" alt="">
-                    <img src="images/insta-4.png" alt="">
-                    <img src="images/insta-5.png" alt="">
-                    <img src="images/insta-6.png" alt=""> -->
                 </div>
             </div>
             <div class="newsletter">
@@ -570,90 +555,6 @@
         </section>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </footer>
-
-
-
-
-
-
-
-
-<!-- <div class="shoppingMenu">
-   <div class="bagSection">
-      <div class="bagCategory">
-          <h3>Clothing</h3>
-      </div>
-      <ul class="bagList">
-        <li>Shirts</li>
-        <li>Tops</li>
-        <li>Outerwear</li>
-        <li>Bottoms</li>
-        <li>Denim</li>
-        <li>Swim</li>
-      </ul>
-   </div>
-    <div class="bagSection">
-        <div class="bagCategory">
-            <h3>Hand Bag</h3>
-        </div>
-        <ul class="bagList">
-            <li>Work</li>
-            <li>Weekend</li>
-            <li>Backpacks</li>
-            <li>Wallets</li>
-            <li>Work</li>
-        </ul>
-    </div>
-    <div class="bagSection">
-        <div class="bagCategory">
-            <h3>Shoes</h3>
-        </div>
-        <ul class="bagList">
-            <li>Sneakers</li>
-            <li>Casual</li>
-            <li>Boots</li>
-            <li>Shoe Care/li>
-        </ul>
-    </div>
-    <div class="bagSection">
-        <div class="bagCategory">
-            <h3>Accessories</h3>
-        </div>
-        <ul class="bagList">
-            <li>Sunglasses</li>
-            <li>Watches</li>
-            <li>Jewelry</li>
-            <li>Hats, Scarves, Gloves</li>
-            <li>Ties</li>
-            <li>Underwear & Socks</li>
-            <li>Grooming Products</li>
-            <li>Belts</li>
-        </ul>
-    </div>
-</div> -->
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
