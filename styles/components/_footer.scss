@@ -53,7 +53,7 @@ footer {
         ul li{
             display: inline;
             button {
-                @include fontSize(12);
+                @include fontSize(10);
             }
         }
     }
@@ -160,7 +160,7 @@ footer {
         padding: 10px;
         a {
             color: white;
-            @include fontSize(11);
+            @include fontSize(10);
             transition: all ease 0.5s;
             &:hover {
                 color: $mustard;

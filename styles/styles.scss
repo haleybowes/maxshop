@@ -647,6 +647,12 @@ div {
         bottom: 0;
         left: 0;
         background: white;
+        & .imgBox1:hover {
+            color: $mustard;
+        }
+        & .imgBox2:hover {
+            color: $mustard;
+        }
         & .imgBox1, 
         & .imgBox2 {
             display: inline-block;

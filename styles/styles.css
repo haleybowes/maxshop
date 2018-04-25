@@ -204,7 +204,9 @@ header {
 .mainCountryPicker .subCountryPicker {
   position: absolute;
   display: none;
-  right: 3px; }
+  right: 3px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4); }
 
 .mainCountryPicker > li:hover ul {
   display: block;
@@ -236,12 +238,20 @@ header {
   right: 0;
   width: 330px;
   background: white;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   font-size: 14px;
   font-size: 1.4rem;
   color: #333333; }
   @media (max-width: 500px) {
     .mainSearch .shopBag {
       right: -20px; } }
+  .mainSearch .shopBag .inlineShop {
+    margin-bottom: 20px; }
+    .mainSearch .shopBag .inlineShop p {
+      display: inline; }
+    .mainSearch .shopBag .inlineShop p:nth-of-type(2) {
+      color: #d4bd52; }
   .mainSearch .shopBag img {
     max-height: 100px;
     margin: 20px 10px 10px 0; }
@@ -259,6 +269,26 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .mainSearch .shopBag .clothingItem .clothingDescription p:nth-of-type(2) {
+      color: #aaaaaa; }
+    .mainSearch .shopBag .clothingItem .clothingDescription .strikethrough {
+      text-decoration: line-through; }
+    .mainSearch .shopBag .clothingItem h4, .mainSearch .shopBag .clothingItem h5 {
+      display: inline;
+      font-size: 12px;
+      font-size: 1.2rem; }
+    .mainSearch .shopBag .clothingItem h5 {
+      color: #aaaaaa;
+      font-weight: lighter; }
+    .mainSearch .shopBag .clothingItem .deleteItem {
+      color: #aaaaaa;
+      margin-top: 10px;
+      display: block;
+      -webkit-transition: ease all 0.3s;
+      -o-transition: ease all 0.3s;
+      transition: ease all 0.3s; }
+      .mainSearch .shopBag .clothingItem .deleteItem:hover {
+        color: #d4bd52; }
   .mainSearch .shopBag .subtotal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -266,6 +296,8 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .mainSearch .shopBag .subtotal h4 {
+      margin-right: 50px; }
   .mainSearch .shopBag .subtotalButtons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -282,7 +314,10 @@ header {
       font-size: 12px;
       font-size: 1.2rem;
       color: white;
-      margin-top: 20px; }
+      margin-top: 20px;
+      -webkit-transition: ease all 0.3s;
+      -o-transition: ease all 0.3s;
+      transition: ease all 0.3s; }
       .mainSearch .shopBag .subtotalButtons button:hover {
         border: 1px solid #aaaaaa;
         color: #aaaaaa; }
@@ -301,7 +336,9 @@ header {
   right: 0;
   background: white;
   width: 250px;
-  padding: 20px 30px 20px 20px; }
+  padding: 20px 30px 20px 20px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4); }
   @media (max-width: 500px) {
     .mainSearch .userInfo {
       right: -30px; } }
@@ -336,7 +373,9 @@ header {
   right: 0;
   background: #fff;
   width: 350px;
-  padding: 30px; }
+  padding: 30px;
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4); }
   @media (max-width: 500px) {
     .mainSearch .subSearch {
       right: -100px; } }
@@ -348,7 +387,12 @@ header {
     margin: 0 auto; }
     .mainSearch .subSearch .searchNow form {
       position: relative;
-      right: 10px; }
+      right: 10px;
+      font-size: 12px;
+      font-size: 1.2rem; }
+    .mainSearch .subSearch .searchNow h3 {
+      font-size: 16px;
+      font-size: 1.6rem; }
     .mainSearch .subSearch .searchNow input:first-of-type {
       border: 1px #aaaaaa solid;
       height: 40px;
@@ -461,8 +505,8 @@ header {
   header ul {
     margin-top: 0px; } }
 
-span {
-  color: #000;
+header span {
+  color: #333333;
   position: fixed;
   z-index: 1;
   right: 0;
@@ -574,8 +618,8 @@ footer {
   .upperFooter .tags ul li {
     display: inline; }
     .upperFooter .tags ul li button {
-      font-size: 12px;
-      font-size: 1.2rem; }
+      font-size: 10px;
+      font-size: 1rem; }
   .upperFooter .newsletter p {
     margin-bottom: 30px; }
   .upperFooter .newsletter form input:first-of-type {
@@ -671,8 +715,8 @@ footer {
     padding: 10px; }
     .bottomFooter ul li a {
       color: white;
-      font-size: 11px;
-      font-size: 1.1rem;
+      font-size: 10px;
+      font-size: 1rem;
       -webkit-transition: all ease 0.5s;
       -o-transition: all ease 0.5s;
       transition: all ease 0.5s; }
@@ -1254,6 +1298,10 @@ div {
     bottom: 0;
     left: 0;
     background: white; }
+    .blogImgScroll .imgBox .imgBox1:hover {
+      color: #d4bd52; }
+    .blogImgScroll .imgBox .imgBox2:hover {
+      color: #d4bd52; }
     .blogImgScroll .imgBox .imgBox1,
     .blogImgScroll .imgBox .imgBox2 {
       display: inline-block;
